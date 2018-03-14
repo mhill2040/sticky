@@ -3,10 +3,10 @@ import { connect } from 'react-redux';
 
 const StickyList = ({ stickies }) => (
   <ul>
-    { stickies.map( (t,i) => {
+    { stickies.map( (t) => {
       return (
-        <li key={i}>
-          {t.name}
+        <li key={t}>
+          {t}
         </li>
       )
      })
